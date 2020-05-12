@@ -18,5 +18,7 @@ func main() {
 	fmt.Printf("Built-in type variable :: value :: %d :: type :: %T\n", myInt, myInt)
 	fmt.Printf("Custom type variable :: value :: %d :: type :: %T\n", temp, temp)
 
-	// temp = myInt -> cannot do this, as "temp" is of type "myInteger" and "myInt" is of type INTEGER
+	// myInt = temp -> cannot do this, as "temp" is of type "myInteger" and "myInt" is of type INTEGER
+	myInt = int(temp) // first convert "temp" to INTEGER type and then assign it to "myInt" which is also of INTEGER type
+	fmt.Printf("Built-in type variable :: value :: %d :: type :: %T\n", myInt, myInt)
 }
