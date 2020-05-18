@@ -44,7 +44,7 @@ func main() {
 		fmt.Println("\tDefault Case")
 	}
 
-	fmt.Println("switch with multiple cases")
+	fmt.Println("switch with cases separated as comma separated list")
 	switch myText {
 	case "A", "B", "C":
 		fmt.Println("\tThe text is 'A' or 'B' or 'C'")
