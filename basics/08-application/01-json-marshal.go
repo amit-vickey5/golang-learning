@@ -27,11 +27,11 @@ func main() {
 
     fmt.Println("Peoples Data ::", people)
 
-    bs, err := json.Marshal(people)
+    byteSlice, err := json.Marshal(people)
 
     if err != nil {
         fmt.Println(err)
     }
 
-    fmt.Println("JSON ::", string(bs))
+    fmt.Println("JSON ::", string(byteSlice))
 }
