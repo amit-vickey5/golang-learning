@@ -6,6 +6,9 @@ import (
     "sync"
 )
 
+// race condition: same variable(or memory) is accessed/manipulated by multiple goroutines
+// to check if race condition is there in the program....go run -race 03-race-condition.go
+
 func main() {
     fmt.Println("CPUs ::", runtime.NumCPU())
     fmt.Println("Main Goroutines ::", runtime.NumGoroutine())
